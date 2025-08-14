@@ -364,6 +364,7 @@ body{
     height: 200px;
 }
 .blogs{
+    flex-wrap: wrap;
     display: flex;
     width: 100%;
 }
@@ -376,11 +377,11 @@ body{
     margin-bottom: -0;
 }
 .container1{
-    width: 30%;
+    /* width: 30%; */
     position: relative;
 }
 .container2{
-    width: 70%;
+    /* width: 70%; */
 
 }
 .container1 > img{
@@ -389,18 +390,18 @@ body{
 }
 .sub1{
     display: flex;
-    width: 440px;
+    /* width: 440px; */
     margin-top: 40px;
 }
 .sub2{
     display: flex;
     margin-top: 40px;
-    width: 440px;
+    /* width: 440px; */
 }
 .letters{
     display: flex;
     flex-direction: column;
-    width: 350px;
+    /* width: 350px; */
     line-height: 23px;
     margin-top: 10px;
     margin-left: 10px;
@@ -965,6 +966,7 @@ width: 350px;
 } 
 .nav-toggle{
     display: none;
+
 }
 
 .navs{
@@ -983,16 +985,13 @@ width: 350px;
 
 .one>p{
     padding: 20px;
-    /* margin-top: 10px; */
 }
 .one>img{
     width: 370px;
     height: 200px;
     margin-right: 20px;
 }
- /* #nav-links{
-    display: none;
-} */
+
 #nav-links.show{
     display: block;
 } 
@@ -1030,9 +1029,11 @@ width: 350px;
         display: flex;
     }
     .section2{
-        flex-direction: column;
+        height: fit-content;
+        flex-wrap: wrap;
         align-items: center;
         transform: translateX(0);
+        display: flex;
     }
 
     .sec1, .sec2{
@@ -1045,11 +1046,9 @@ width: 350px;
         height: auto;
         width: 100%;
     }
-    .container1, .container2{
-        width: 100%;
-    } 
+ 
     .nav-bar{
-        height: 80px;
+        height: 95px;
         position: fixed;
          top: 0;
         left: 0;
@@ -1166,23 +1165,23 @@ width: 350px;
         border-radius: 50%;
      }
      .blogs{
+
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 30px;
+        width: 100%;
      }
      .subcontainer1{
         flex-direction: column;
-        margin-left: 20px;
+        /* margin-left: 20px; */
 
      }
      .container2 >h3 , h1{
         margin-left: 20px;
      }
      .image{
-        width: 200px;
+        width: 150px;
      }
-     .navs{
-        display: none;
-     }
+   
      /* =========== About========== */
     .imggg{
        flex-wrap: wrap;
