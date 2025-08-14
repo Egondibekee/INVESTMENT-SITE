@@ -457,12 +457,14 @@ body{
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .charting_area{
+    flex-wrap: wrap;
   position: absolute;
   display: flex;
   align-items: center;
@@ -504,14 +506,14 @@ body{
 
 @media (min-width : 320px) and  (max-width: 1024px){
     .charting_your{
-        display: none;
+        /* display: none; */
     }
 
 }
 
 @media (min-width : 768px) and  (max-width: 1024px){
   .charting_your{
-    display: none;
+    /* display: none; */
   }
 }
 
