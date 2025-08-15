@@ -1,104 +1,429 @@
-/* <div class="aboutsec1">
-    <div class="head2">
-            <img class="imgabout" src="./Icon/stock-exchange-data-investment-workplace-concept.jpg" alt="">
-        </div>
-            <div class="header"> 
-            <h1 style="color:rgb(66, 69, 248) ;" class="abouthead"> What is EGO-TRADE?</h1>
-            <p class="aboutpara">Egotrade is a leading financial services company that provides a wide range of investment solutions to individuals and institutions. Our mission is to empower our clients with the knowledge and tools they need to achieve their financial goals.With a team of experienced professionals, we offer personalized investment strategies, portfolio management, and market analysis. Our commitment to excellence and client satisfaction sets us apart in the industry . At Egotrade, we believe in transparency, integrity, and innovation. We leverage cutting-edge technology to deliver real-time insights and data-driven solutions. Whether you are a seasoned investor or just starting your financial journey, we are here to guide you every step of the way.Join us at Egotrade and experience a new level of financial empowerment. Together, we can navigate the complexities of the financial markets and achieve your investment objectives.</p>
-            </div>
-        </div>
- 
-    </div> */
+@media screen and (max-width: 1104px) {
+.nav-bar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(66, 69, 248);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height:100px;
+    width: 100%;
+} 
+.navs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    list-style: none;  
+}
+    #nav-links{
+        display: flex;
+       
+    }
+    #nav-links.show{
+        display: flex;
+    }
+    .section2{
+        height: fit-content;
+        flex-wrap: wrap;
+        align-items: center;
+        transform: translateX(0);
+        display: flex;
+    }
+     .nav1 {
+    font-size: 16px;
+    background-color: rgb(238, 243, 242);
+    /* padding: 10px 15px; */
+    border: none;
+    border-radius: 5px;
+    color:  rgb(66, 69, 248);
+     }
 
+    .sec1, .sec2{
+        width: 80%;
+        margin: 10px ;
+        height: 250px;
+        font-size: 14px;
+    }
+    .img1, .img2, .img3, .contactimg > img{
+        height: auto;
+        width: 100%;
+    }
+ 
+    .nav-bar{
+        height: 100px;
+        position: fixed;
+         top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .text1{
+        position: absolute;
+        top: 150px;
+        left: 20px;
+        font-size: 17px;
+        color: white;
+        line-height: 25px;
+    }
+    .vid{
+        height: 400px;
+    } 
+    .get-started{
+        position: absolute;
+        top: 275px;
+        left: 20px;
+        font-size: 18px;
+    }
+    .colour{
+        font-size: 30px;
+        margin-left: 20%;
+        /* margin-top: 30px; */
+        margin-bottom: 30px;
+        margin-top: -0%;
+    }
+    .sec3{
+        top: 2100px;
+        width: 92%;
+        position: absolute;
+        background-color: #eff0f5;
+        height: 330px;
+    }
+    .sec3a{
+        font-size: 18px;
+        line-height: 22px;
+        height: 380px;
+        color: #000;
+    }
+    .sec3a > h1{
+        margin-bottom: 20px;
+    }
+    .sec3a > h4{
+        margin-top: 10px;
+    }
+    .img2{
+        height: 460px;
+    }
+    .divs{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        height: 800px;
+        font-size: 20px;
+        margin-bottom: 100px;
+        margin-top: 50px;
+        /* justify-content: space-between; */
+        padding: 20px;
+    }
+    .service{
+        width: 90%;
+        align-items: center;
+        margin-left: 15px;
+    }
+    .section4{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+        /* width: 95%; */
+        /* padding-right: 3%; */
+        justify-content: center;
+    }
+    .sec4i{
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    .share{
+        margin-left: 20px;
+    }
+   
+     .section5{
+        flex-direction: column;
+       
+     }
+     .sec5a{
+        width: 90%;
+         align-items: center;
+     }
+     .section4a{
+        width: 90%;
+        align-items: center;
+                margin-left: 20px;
+
+     }
+     .section4a > p{
+        margin-left: 10px;
+     }
+
+     .main-container1{
+    margin-top: 4rem;
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+    background-color: #eff0f5;
+     }
+
+    .footer{
+        display: block;
+        margin-top: 30px;
+     }
+     .section5{
+        /* width: 90%; */
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+        
+     }
+     .img3{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+     }
+     .blogs{
+
+        flex-direction: column;
+        margin-top: 30px;
+        width: 100%;
+     }
+     .subcontainer1{
+        flex-direction: column;
+        /* margin-left: 20px; */
+
+     }
+     .container2 >h3 , h1{
+        margin-left: 20px;
+     }
+     .image{
+        width: 150px;
+     }
+   
+     /* =========== About========== */
+    .imggg{
+       flex-wrap: wrap;
+       position: relative;
     
-      <div class="charting_your">
+        /* flex-direction: column; */
+    }
+    .aboutpics{
+        height: 400px;
+    }
+    .exp{
+        font-size: 40px;
+        /* right: 120px; */
+        position: absolute;
+    top: 100px;
+    left: 20px;
+    }
+    .ex{
+    position: absolute;
+    top: 430px;
+    left: 20px;
+    color: #4245f8;
+    font-size: 35px;
+    text-shadow: 2px 0px black;
+  }
+  .teamworker{
+    flex-direction: column;
+    height: 1200px;
+  }
+  .img_teamworker >img{
+    width: 410px;
+    height: 300x;
+    margin: 0;
+  }
+  .employee{
+    flex-direction: column;
 
+  }
+  .imgabout{
+    width: 400px;
+    height: 450px;
+    margin-left: 30px;
+  }
+  .aboutsec1{
+    display: none; 
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: none;
+    align-items: center;
+  }
+  .aboutpara{
+    width: 90%;
+    align-self: center;
+    margin-left: 20PX;
+  }
+  .text-overflow{
+    display: none;
+  }
+  .slider{
+    height: 500px;
+  }
+  .slide{
+    opacity: 1;
+  }
+  .header{
+    margin-top: -500px;
+  }
+/* ==========contact=========== */
+    .side{
+        width: 90%;
+        /* margin-right: 30px; */
+        flex-direction: column;
+        height: 350px;
+        align-items: center;
+        padding: 10px;
+    }
+    .expp{
+    position: absolute;
+    top: 350px;
+    left: 50px;
+    color: #4245f8;
+    font-size: 30px;
+    text-shadow: 2px 0px black;
+}
+.side1{
+    padding: 20px;
+    font-size: 18px;
+}
+.side2{
+    font-size: 20px;
+}
+/* =========register=========== */
+.action{
+    /* width: 90%; */
+    font-size: 20px;
+    padding: 0;
+}
+.main-container{
+     margin-left: 0%;
+}
+.action > input{
+    height: 40px;
+    width: 350px;
+        border: 1px solid #4245f8;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 20px;
 
-                <div class="charting_area active">
-                    <div class="chart_img">
-                        <img src="" alt="">
-                    </div>
-                    <div class="chart_text">
-                        <h1>WHAT IS EGO-TRADE</h1>
-                        <p >Egotrade is a leading financial services company that provides a wide range of investment solutions to individuals and institutions. <br> Our mission is to empower our clients with the knowledge and tools they need to achieve their financial goals. <br>With a team of experienced professionals, we offer personalized investment strategies, portfolio management, and market analysis. <br> Our commitment to excellence and client satisfaction sets us apart in the industry . <br> At Egotrade, we believe in transparency, integrity, and innovation. <br> We leverage cutting-edge technology to deliver real-time insights and data-driven solutions. <br> Whether you are a seasoned investor or just starting your financial journey, we are here to guide you every step of the way. <br>Join us at Egotrade and experience a new level of financial empowerment. <br> Together, we can navigate the complexities of the financial markets and achieve your investment objectives.</p>
-                    </div>
-                </div>
+}
+.action > button{
+    height: 40px;
+    width: 350px;
+        /* border: 1px solid #4245f8; */
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: #4245f8;
+    color: #eff0f5;
+    border: none;
+    font-size: 20px;
 
-                
+}
+/* =============blog============== */
+    .bit{
+        font-size: 20px;
+        height: 400px;
+    }
+    .subcontent1{
+        /* flex-wrap: wrap; */
+         flex-direction: column; 
+        
+    }
+    .content1 > img{
+       width: 380px;
+       height: 400px;
+       margin-left: 0%;
+        /* padding-left: 10px; */
 
-                <div class="charting_area">
-                    <div class="chart_img">
-                    </div>
-                    <div class="chart_text">
-                        <h1>Quick deposit, <br> Quick withdrawal</h1>
-                        <p>Over a superb options for depositing money through <br> Bitcoin, Euthereum & USDT </p>
-                    </div>
-                </div>
+    }
+    .rock{
+        display: flex;
+        align-items: center;
+             width: 160%;
+             padding-left:10px;
+             justify-content: space-evenly;
+    }
+    .p{
+        width:150%;
+        margin-left: 10px;
+    align-self: center;
+     padding: 20px;
+     font-size: 18px;
+    }
+    .threediv{
+        flex-direction: column;
 
+    }
+    .one{
+        margin: 30px;
+        margin-left: 10px;
+        font-size: 20px;
+        height: 550px;
+    }
+    .content2{
+        width: 97%;
+        margin: 5px;
+        height: 1170px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
 
-                <div class="charting_area">
-                    <div class="chart_img">
-                    </div>
-                    <div class="chart_text">
-                        <h1>Charting your course  <br> to financial freedom</h1>
-                        <p >Short selling a digtal asset allows miners to  <br>   benefits from market movement by earning more contorl over their profits</p>
-                    </div>
-                </div>
+    /* ========service======== */
+    .text1{
+        display: none;
+    /* position: absolute;    
+    top: 250px;
+    font-size: 20px;
+     color: antiquewhite;
+    left: 10px; */
+    }
+    .get-started{
+        position: absolute;
+        top: 280px;
+    }
+    .seperate{
+        flex-direction: column;
 
+    }
+    .seperate2{
+        flex-direction: column;
+    }
+    .aboutsec1{
+        height: 2600px;
+    }
+    .sep1a{
+        font-size: 20px;
+        height: 300px;
+    }
+    .sep1{
+        font-size: 20px;
+        height: 300px;
 
-            </div>
-
-
-
-
-            
-        <div class="charting_area ">
-            <div class="chart_img">
-                        <img src="./Icon/homevideo.jpg" alt="">
-
-            </div>
-
-
-
-            <div class="chart_text">
-                <h2>OUR Mission</h2>
-                <br>
-                <p>Leading the quest to change the world as the trusted
-                <br> sustainability partner creating valued, single-sourced, 
-                <br>efficient energy solutions delivered with passion, 
-                <br>expertise, teamwork and a relentless focus on customer 
-                <br>satisfaction. All these and more we tend to achieve through
-                <br> a team of well dedicated personnel. At metro hedge, we Have
-                <br> the flexibility to remain ahead of a changing environment 
-                <br>by being entrepreneurial, passionate, open, innovative and smart.
-                </p>
-                <br>
-           
-
-            </div>
-        </div>
-
-
-        <div class="charting_area ">
-            <div class="chart_img">
-                                        <img src="./Icon/How to get from making 0 dollar in crypto to a 1….jpeg" alt="">
-
-            </div>
-
-
-
-            <div class="chart_text">
-                <h2>Quick deposits, <br> quick withdrawals</h2>
-                <br>
-                <p>Over 4 superb options for depositing and withdrawing money through 
-                <br>Bitcoin, Ethereum & USDT.
-                </p>
-                <br>
- 
-
-            </div>
-        </div>
-
-
-    </div>
-    </div>
+    }
+    .lastservice{
+        flex-direction: column;
+        width: 90%;
+    }
+    .writeup{
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+    .pic{
+        padding: 0%;
+        width: 262%;
+    }
+     .hhh{
+        width: 120%;
+        margin-right: 30px;
+    }
+    .ppp{
+        width: 130%;
+    }
+    .what{
+        width: 100%;
+        text-align: center;
+       
+    }
+    
+}

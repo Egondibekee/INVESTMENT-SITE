@@ -59,6 +59,9 @@ body{
 .img1{
     width: 100%;
     height:650px ;
+
+
+
 }
 /* .text1{
     position: absolute;
@@ -506,10 +509,31 @@ body{
 }
 
 @media (min-width : 320px) and  (max-width: 1024px){
-    .charting_your{
-        /* display: none; */
+    .charting_area{
+        padding: 0.5rem;
+        gap: 0;
     }
 
+    .chart_img img{
+    width: 500px;
+    height: 400px;
+}
+.chart_text h2{
+   font-size: 24px;
+}
+.chart_text p{
+   font-size: 15px;
+   line-height: 1rem;
+}
+.chart_text img{
+   border-radius: 50px;
+}
+
+.chart_text img{
+    width: 50px;
+
+
+}
 }
 
 @media (min-width : 768px) and  (max-width: 1024px){
@@ -1038,9 +1062,9 @@ width: 350px;
 
     .sec1, .sec2{
         width: 80%;
-        margin: 10px 0;
+        margin: 10px ;
         height: 250px;
-        font-size: 17px;
+        font-size: 14px;
     }
     .img1, .img2, .img3, .contactimg > img{
         height: auto;
@@ -1048,7 +1072,7 @@ width: 350px;
     }
  
     .nav-bar{
-        height: 95px;
+        height: 100px;
         position: fixed;
          top: 0;
         left: 0;
@@ -1129,6 +1153,9 @@ width: 350px;
         margin: 10px 0;
         font-size: 18px;
     }
+    .share{
+        margin-left: 20px;
+    }
    
      .section5{
         flex-direction: column;
@@ -1147,8 +1174,16 @@ width: 350px;
      .section4a > p{
         margin-left: 10px;
      }
-     
-     .footer{
+
+     .main-container1{
+    margin-top: 4rem;
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+    background-color: #eff0f5;
+     }
+
+    .footer{
         display: block;
         margin-top: 30px;
      }
@@ -1314,10 +1349,10 @@ width: 350px;
         
     }
     .content1 > img{
-       width: 400px;
+       width: 380px;
        height: 400px;
        margin-left: 0%;
-        padding-left: 10px;
+        /* padding-left: 10px; */
 
     }
     .rock{
@@ -1347,8 +1382,9 @@ width: 350px;
     .content2{
         width: 97%;
         margin: 5px;
-        height: 1120px;
+        height: 1170px;
         margin-top: 50px;
+        margin-bottom: 30px;
     }
 
     /* ========service======== */
@@ -1404,9 +1440,10 @@ width: 350px;
     }
     .what{
         width: 100%;
-         margin-right: 20%;
+        text-align: center;
        
     }
     }
     
     
+
