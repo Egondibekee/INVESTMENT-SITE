@@ -258,6 +258,7 @@ body{
     color: white;
 }
 .service{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -271,6 +272,7 @@ body{
 }
 .service >p{
     font-size: 20px;
+    
 }
 .section4{
     display: flex;
@@ -285,11 +287,15 @@ body{
      line-height: 25px;
 
 }
+
+.section4 h2{
+    font-size: 1rem;
+}
 .sec4i{
     box-shadow: 0px 0px 5px white;
     margin: 10px;
     width: 30%;
-    height: 300px;
+    height: 350px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -434,7 +440,7 @@ body{
     /* position: relative; */
     margin-top: 20px;
     width: 100%;
-    height: 600px;
+    height: 100vh;
         box-shadow: 0px 0px 7px black;
 
 }
@@ -641,18 +647,24 @@ align-items: center;
 .seperate{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     /* margin-top: 5px; */
+    height: 50vh;
 }
 .seperate2{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    height: 50vh;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     margin-top: 10px;
 }
 .sep{
+    width: 100%;
+    /* height: 100vh; */
     display: block;
     justify-content: center;
     flex-direction: column;
@@ -691,6 +703,7 @@ align-items: center;
 .lastservice{
     display: flex;
     padding: 20px;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 10PX;
     width: 100%;
@@ -698,9 +711,9 @@ align-items: center;
 .pics{
     width: 40%;
 }
-.pic{
-    width: 550px;
-    height: 520px;
+.pics img{
+    width: 650px;
+    height: 550px;
 }
 .flexx{
     display: flex;
@@ -742,7 +755,6 @@ align-items: center;
     position: absolute;
     top: 870px;
     left: 420px;
-    
     color: #4245f8;
     font-size: 50px;
     text-shadow: 2px 2px black;
@@ -750,7 +762,7 @@ align-items: center;
 }
 .team{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: auto;
@@ -826,14 +838,18 @@ width: 350px;
     padding: 30px;
 
 }
+.register_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .main-container1{
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     width: 600px;
     height: 100%;
-    margin-left: 30%;
     background-color: #eff0f5;
     box-shadow: 0px 0px 7px #4245f8;
-    padding: 30px;
+    padding: 10px;
 
 }
 .action{
@@ -1024,7 +1040,13 @@ width: 350px;
 }
 
 
-
+.copy_write{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 @media screen and (max-width: 780px) {
     .nav-toggle{
         background-color: transparent;
@@ -1052,19 +1074,21 @@ width: 350px;
     #nav-links.show{
         display: flex;
     }
-    .section2{
+     .section2{
         height: fit-content;
         flex-wrap: wrap;
         align-items: center;
         transform: translateX(0);
         display: flex;
-    }
+    } 
 
     .sec1, .sec2{
-        width: 80%;
+        width: 300px;
         margin: 10px ;
         height: 250px;
         font-size: 14px;
+        display: flex;
+        flex-direction: column;
     }
     .img1, .img2, .img3, .contactimg > img{
         height: auto;
@@ -1140,15 +1164,17 @@ width: 350px;
         margin-left: 15px;
     }
     .section4{
-        flex-direction: column;
+        height: fit-content;
+        /* flex-direction: column; */
         align-items: center;
         margin-bottom: 50px;
         /* width: 95%; */
         /* padding-right: 3%; */
         justify-content: center;
+        flex-wrap: wrap;
     }
     .sec4i{
-        width: 90%;
+        width: 100%;
         height: auto;
         margin: 10px 0;
         font-size: 18px;
@@ -1158,7 +1184,7 @@ width: 350px;
     }
    
      .section5{
-        flex-direction: column;
+       flex-wrap: wrap;
        
      }
      .sec5a{
@@ -1216,6 +1242,11 @@ width: 350px;
      .image{
         width: 150px;
      }
+
+     .pics img{
+    width: 350px;
+    height: 550px;
+}
    
      /* =========== About========== */
     .imggg{
@@ -1235,6 +1266,7 @@ width: 350px;
     left: 20px;
     }
     .ex{
+        display: none;
     position: absolute;
     top: 430px;
     left: 20px;
@@ -1243,29 +1275,37 @@ width: 350px;
     text-shadow: 2px 0px black;
   }
   .teamworker{
-    flex-direction: column;
-    height: 1200px;
+    flex-wrap: wrap;
+    height: fit-content;
   }
-  .img_teamworker >img{
-    width: 410px;
-    height: 300x;
-    margin: 0;
-  }
+  .img_teamworker img{
+    width: 10rem;
+    display: none;
+}
+.header{
+    display: none;
+}
   .employee{
     flex-direction: column;
 
   }
-  .imgabout{
-    width: 400px;
-    height: 450px;
-    margin-left: 30px;
+   .imgabout{
+    width: 450px;
+    height: 400px;
+    /* margin-left: 2em; */
+   }
+
+  .img_teamworker img{
+    width: 100px;
   }
   .aboutsec1{
-    display: none; 
-    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
     justify-content: space-between;
     box-shadow: none;
+    height: fit-content;
     align-items: center;
+    /* padding: 2rem; */
   }
   .aboutpara{
     width: 90%;
@@ -1319,7 +1359,8 @@ width: 350px;
 }
 .action > input{
     height: 40px;
-    width: 350px;
+    width: 340px;
+    padding: 5px;
         border: 1px solid #4245f8;
     border-radius: 5px;
     margin-top: 5px;
@@ -1401,15 +1442,16 @@ width: 350px;
         top: 280px;
     }
     .seperate{
+        display: flex;
+        height: fit-content;
         flex-direction: column;
 
     }
     .seperate2{
+        height: fit-content;
         flex-direction: column;
     }
-    .aboutsec1{
-        height: 2600px;
-    }
+    
     .sep1a{
         font-size: 20px;
         height: 300px;
@@ -1429,7 +1471,7 @@ width: 350px;
     }
     .pic{
         padding: 0%;
-        width: 262%;
+        width: 280px;
     }
      .hhh{
         width: 120%;
@@ -1439,11 +1481,11 @@ width: 350px;
         width: 130%;
     }
     .what{
+        display: none;
         width: 100%;
         text-align: center;
        
     }
-    }
-    
+    }  
     
 
